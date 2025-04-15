@@ -17,3 +17,5 @@ require (
 	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20200902074654-038fdea0a05b // indirect
 )
+
+replace github.com/incognitochain/bridge-eth => github.com/levietcuong2602/bridge-eth v0.0.0-20250414034907-5bf8e5ecab79
