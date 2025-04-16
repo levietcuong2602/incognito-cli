@@ -212,7 +212,7 @@ func NewLocalConfig(incClient *incclient.IncClient) error {
 	var err error
 	if incClient == nil {
 		if cache == 0 {
-			incClient, err = incclient.NewLocalClient("")
+			incClient, err = incclient.NewLocalClient("9334")
 		} else {
 			incClient, err = incclient.NewLocalClientWithCache()
 		}

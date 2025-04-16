@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/incognitochain/go-incognito-sdk-v2/common"
 	"github.com/incognitochain/go-incognito-sdk-v2/incclient"
 	"github.com/incognitochain/incognito-cli/pdex_v3"
@@ -13,7 +14,7 @@ var defaultFlags = map[string]cli.Flag{
 		Name:        networkFlag,
 		Aliases:     aliases[networkFlag],
 		Usage:       "Network environment (mainnet, testnet, testnet1, local)",
-		Value:       "mainnet",
+		Value:       "local",
 		Destination: &network,
 	},
 	hostFlag: &cli.StringFlag{

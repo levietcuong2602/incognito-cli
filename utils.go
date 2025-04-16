@@ -4,14 +4,15 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"github.com/incognitochain/go-incognito-sdk-v2/incclient"
-	"github.com/urfave/cli/v2"
-	"golang.org/x/crypto/ssh/terminal"
 	"log"
 	"os"
 	"reflect"
 	"strings"
 	"time"
+
+	"github.com/incognitochain/go-incognito-sdk-v2/incclient"
+	"github.com/urfave/cli/v2"
+	"golang.org/x/crypto/ssh/terminal"
 )
 
 var (
@@ -39,6 +40,8 @@ func initNetWork() error {
 		fmt.Printf("host: %v, version: %v\n", host, clientVersion)
 		return initClient(host, clientVersion)
 	}
+
+	fmt.Printf("network: %v\n", network)
 	switch network {
 	case "mainnet":
 		return NewMainNetConfig(nil)
